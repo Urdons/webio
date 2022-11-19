@@ -1,5 +1,10 @@
 body {
 	background-color: #111111;
+	padding: 4px 4px 4px 4px;
+}
+
+header {
+	padding: 4px 4px 4px 4px;
 }
 
 p {
