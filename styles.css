@@ -1,1 +1,18 @@
+ 
+body {
+	background-color: #111111;
+}
 
+p {
+	color: #dddddd;
+}
+
+h1 {
+	color: #dddddd;
+}
+
+a:link {
+	color: #111111;
+	background-color: #dddddd;
+	margin: 4;
+}
