@@ -1,40 +1,62 @@
 body {
-	background-color: #111111;
-	padding: 4px 4px 4px 4px;
+	background-color: #ce97b0;
+	padding: 4px;
 }
 
 header {
-	padding: 4px 4px 4px 4px;
+	overflow: hidden;
 }
 
 p {
-	color: #dddddd;
+	font-family: 'Caladea', serif;
+	margin-left: 8px;
+	margin-right: 8px;
+	font-style: italic;
 }
 
 h1 {
-	color: #dddddd;
+	font-family: 'Caladea', serif;
+	font-style: italic;
+	font-size: 64px;
 }
 
-a:link {
-	color: #111111;
-	background-color: #aaaaaa;
-	margin-left: 4;
+#Images {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	max-width: 502px;
+	background-color: white;
+	padding-top: 32px;
+	padding-bottom: 8px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 8px;
 }
 
-a:visited {
-	color: #111111;
-	background-color: #aaaaaa;
-	margin-left: 4;
+img {
+	width: 100%;
+	filter: grayscale(50%) brightness(0.75);
+	margin-bottom: 4px;
+}
+
+img:hover {
+	filter: grayscale(0%) brightness(1);
+}
+
+a {
+	display: block;
+  	color: #111111;
+  	background-color: white;
+  	float: left;
+  	text-align: center;
+  	padding: 8px 8px;
+  	font-family: 'Caladea', serif;
+  	font-style: italic;
+  	text-decoration: none;
+  	border-radius: 8px;
 }
 
 a:hover {
-	color: #111111;
-	background-color: #dddddd;
-	margin-left: 4;
-}
-
-a:active {
-	color: #111111;
-	background-color: #dddddd;
-	margin-left: 4;
+	background-color: black;
+	color: white;
 }
