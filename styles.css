@@ -4,8 +4,13 @@
 	}
 
 body {
+<<<<<<< HEAD
 	background-color: blue;
 	padding: 0px;
+=======
+	background-color: black;
+	padding: 8px;
+>>>>>>> 6161ec7d35fcda79b5bdc248e86c77971b3c9944
 }
 
 header {
@@ -52,7 +57,11 @@ h1 {
 	float: left;
 	max-width: 502px;
 	background-color: white;
+<<<<<<< HEAD
 	padding-top: 8px;
+=======
+	padding-top: 10px;
+>>>>>>> 6161ec7d35fcda79b5bdc248e86c77971b3c9944
 	padding-bottom: 8px;
 	margin: 4px;
 	border-radius: 8px;
@@ -60,8 +69,19 @@ h1 {
 
 .ImageGroup img {
 	width: 100%;
+<<<<<<< HEAD
 	margin-top: 2px;
 	margin-bottom: 2px;
+=======
+	filter: grayscale(50%);
+	opacity: 0.75;
+	margin-bottom: 4px;
+}
+
+img:hover {
+	filter: grayscale(0%);
+	opacity: 1;
+>>>>>>> 6161ec7d35fcda79b5bdc248e86c77971b3c9944
 }
 
 a {
