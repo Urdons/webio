@@ -5,7 +5,7 @@
 
 body {
 	background-color: #ce97b0;
-	padding: 4px;
+	padding: 8px;
 }
 
 header {
@@ -31,7 +31,7 @@ h1 {
 	flex-direction: column;
 	max-width: 502px;
 	background-color: white;
-	padding-top: 32px;
+	padding-top: 8px;
 	padding-bottom: 8px;
 	margin-left: auto;
 	margin-right: auto;
@@ -40,12 +40,14 @@ h1 {
 
 img {
 	width: 100%;
-	filter: grayscale(50%) brightness(0.75);
+	filter: grayscale(50%);
+	opacity: 0.75;
 	margin-bottom: 4px;
 }
 
 img:hover {
-	filter: grayscale(0%) brightness(1);
+	filter: grayscale(0%);
+	opacity: 1;
 }
 
 a {
