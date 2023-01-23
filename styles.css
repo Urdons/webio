@@ -86,7 +86,7 @@ h1 {
 	z-index: 50;
 }
 
-a {
+header a {
 	display: block;
   	color: white;
   	background-color: blue;
@@ -101,7 +101,7 @@ a {
   	border: none;
 }
 
-a:hover {
+header a:hover {
 	background-color: black;
 	color: white;
 }

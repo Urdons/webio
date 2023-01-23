@@ -46,11 +46,16 @@
 			imageGroup1.className = "ImageGroup";
 
 			for (let i of group1) {
+				const link = document.createElement("a");
+				link.href = "Images/" + i + ".jpg";
+				link.target="_blank";
+
 				const image = document.createElement("IMG");
 				image.src = "Images/" + i + ".jpg";
 				console.log("Images/" + i + ".jpg");
 
-				imageGroup1.appendChild(image);
+				link.appendChild(image);
+				imageGroup1.appendChild(link);
 			}
 
 			imageSection.appendChild(imageGroup1);
@@ -59,11 +64,16 @@
 			imageGroup2.className = "ImageGroup";
 
 			for (let i of group2) {
+				const link = document.createElement("a");
+				link.href = "Images/" + i + ".jpg";
+				link.target="_blank";
+
 				const image = document.createElement("IMG");
 				image.src = "Images/" + i + ".jpg";
 				console.log("Images/" + i + ".jpg");
 
-				imageGroup2.appendChild(image);
+				link.appendChild(image);
+				imageGroup2.appendChild(link)
 			}
 
 			imageSection.appendChild(imageGroup2);
