@@ -9,9 +9,18 @@ body {
 }
 
 header {
+	position: fixed;
+  	top: 0;
+  	width: 100%;
 	overflow: hidden;
 	background-color: white;
 	padding: 4px;
+	z-index: 1000;
+	box-shadow: 0px 0px 25px black;
+}
+
+header:hover {
+	box-shadow: 0px 0px 50px black;
 }
 
 section {
@@ -56,6 +65,11 @@ h1 {
 	padding-bottom: 8px;
 	margin: 4px;
 	border-radius: 8px;
+}
+
+.ImageGroup:hover {
+	z-index: 100;
+	box-shadow: 0px 0px 25px black;
 }
 
 .ImageGroup img {

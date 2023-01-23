@@ -19,6 +19,10 @@
 			<a href="https://www.youtube.com/channel/UCW4Ba6Mu-nRZII6kg2eEGzA" target="_blank"> Youtube Link </a>
 			<a href="Page.htm"> hopefully a link to an almost empty page </a>
 		</header>
+
+		<br>
+		<br>
+		<br>
 		<br>
 		<section id="Title">
 			<h1 style="text-align: center; color: white"> hi </h1>
@@ -33,22 +37,36 @@
 		</section>
 
 		<script type="text/javascript">
-			let images = ["FoliageOutABusWindow_20", "DewOnBlueCar_20", "WeezerRecord_14", "BoatOnWater_06", "Piano_10"]
+			let group1 = ["FoliageOutABusWindow_20", "DewOnBlueCar_20", "WeezerRecord_14", "Piano_10", "BoatOnWater_06"]
+			let group2 = ["SchoolFood_20", "BusParkedOutBusWindow_20", "BarnShed_04", "CautionTape_04", "LeaveCubeMastered_04"]
 
 			const imageSection = document.getElementById("ImageGroupContainer");
 
-			const imageGroup = document.createElement("DIV");
-			imageGroup.className = "ImageGroup";
+			const imageGroup1 = document.createElement("DIV");
+			imageGroup1.className = "ImageGroup";
 
-			for (let i of images) {
+			for (let i of group1) {
 				const image = document.createElement("IMG");
 				image.src = "Images/" + i + ".jpg";
 				console.log("Images/" + i + ".jpg");
 
-				imageGroup.appendChild(image);
+				imageGroup1.appendChild(image);
 			}
 
-			imageSection.appendChild(imageGroup);
+			imageSection.appendChild(imageGroup1);
+
+			const imageGroup2 = document.createElement("DIV");
+			imageGroup2.className = "ImageGroup";
+
+			for (let i of group2) {
+				const image = document.createElement("IMG");
+				image.src = "Images/" + i + ".jpg";
+				console.log("Images/" + i + ".jpg");
+
+				imageGroup2.appendChild(image);
+			}
+
+			imageSection.appendChild(imageGroup2);
 		</script>
 	</body>
 </html>
