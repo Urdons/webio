@@ -24,6 +24,26 @@ header:hover {
 	box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
 }
 
+header a {
+	display: block;
+  	color: white;
+  	background-color: blue;
+  	float: left;
+  	text-align: center;
+  	margin: 4px;
+  	padding: 8px 8px;
+  	font-family: 'Caladea', serif;
+  	font-style: italic;
+  	text-decoration: none;
+  	border-radius: 8px;
+  	border: none;
+}
+
+header a:hover {
+	background-color: black;
+	color: white;
+}
+
 section {
 	padding: 4px;
 }
@@ -86,22 +106,3 @@ h1 {
 	z-index: 50;
 }
 
-header a {
-	display: block;
-  	color: white;
-  	background-color: blue;
-  	float: left;
-  	text-align: center;
-  	margin: 4px;
-  	padding: 8px 8px;
-  	font-family: 'Caladea', serif;
-  	font-style: italic;
-  	text-decoration: none;
-  	border-radius: 8px;
-  	border: none;
-}
-
-header a:hover {
-	background-color: black;
-	color: white;
-}
