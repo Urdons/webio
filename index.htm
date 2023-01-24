@@ -16,8 +16,10 @@
 	<body>
 		<!-- writing a comment just so i can remember -->
 		<header>
-			<a href="https://www.youtube.com/channel/UCW4Ba6Mu-nRZII6kg2eEGzA" target="_blank"> Youtube Link </a>
-			<a href="Page.htm"> hopefully a link to an almost empty page </a>
+			<button onclick="youtube()"> youtube </button>
+			<button onclick="emptyPage()"> empty page </button>
+			<button onclick="color()"> color </button>
+			<button onclick="theme()"> theme </button>
 		</header>
 
 		<br>
@@ -25,8 +27,8 @@
 		<br>
 		<br>
 		<section id="Title">
-			<h1 style="text-align: center; color: white"> hi </h1>
-			<p style="text-align: center; color: white;"> ok it works lol </p>
+			<h1 style="text-align: center;"> hi </h1>
+			<p style="text-align: center;"> welcome to my website </p>
 		</section>
 
 		<br>
@@ -36,47 +38,8 @@
 			</div>
 		</section>
 
-		<script type="text/javascript">
-			let group1 = ["FoliageOutABusWindow_20", "DewOnBlueCar_20", "WeezerRecord_14", "Piano_10", "BoatOnWater_06"]
-			let group2 = ["SchoolFood_20", "BusParkedOutBusWindow_20", "BarnShed_04", "CautionTape_04", "LeaveCubeMastered_04"]
-
-			const imageSection = document.getElementById("ImageGroupContainer");
-
-			const imageGroup1 = document.createElement("DIV");
-			imageGroup1.className = "ImageGroup";
-
-			for (let i of group1) {
-				const link = document.createElement("a");
-				link.href = "Images/" + i + ".jpg";
-				link.target="_blank";
-
-				const image = document.createElement("IMG");
-				image.src = "Images/" + i + ".jpg";
-				console.log("Images/" + i + ".jpg");
-
-				link.appendChild(image);
-				imageGroup1.appendChild(link);
-			}
-
-			imageSection.appendChild(imageGroup1);
-
-			const imageGroup2 = document.createElement("DIV");
-			imageGroup2.className = "ImageGroup";
-
-			for (let i of group2) {
-				const link = document.createElement("a");
-				link.href = "Images/" + i + ".jpg";
-				link.target="_blank";
-
-				const image = document.createElement("IMG");
-				image.src = "Images/" + i + ".jpg";
-				console.log("Images/" + i + ".jpg");
-
-				link.appendChild(image);
-				imageGroup2.appendChild(link)
-			}
-
-			imageSection.appendChild(imageGroup2);
-		</script>
 	</body>
+
+	<script src="script.js"></script>
+
 </html>
