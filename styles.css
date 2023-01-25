@@ -48,14 +48,30 @@ footer {
 	color: var(--b-h-fg-c);
 
 	display: flex;
-  	width: 100%;
 	overflow: hidden;
-	padding: 4px;
+	padding: 16px 8px 16px 8px;
 	z-index: 1000;
+}
+
+footer h1 {
+	color: var(--b-h-fg-c);
+
+	font-size: 1.2em;
+	margin: 0px 2px 0px 2px;
 }
 
 footer p {
 	color: var(--b-h-fg-c);
+
+	font-size: 1.2em;
+	margin: 0px 2px 0px 2px;
+}
+
+footer a {
+	color: var(--special-color);
+
+	font-size: 1.2em;
+	margin: 0px 2px 0px 2px;
 }
 
 button {
@@ -67,7 +83,7 @@ button {
   	text-align: center;
   	margin: 4px;
   	padding: 8px 8px;
-  	font-size: 16px;
+  	font-size: 1.2em;
   	font-family: 'Caladea', serif;
   	font-style: italic;
   	text-decoration: none;
@@ -88,8 +104,7 @@ p {
 	color: var(--fg-c);
 
 	font-family: 'Caladea', serif;
-	margin-left: 8px;
-	margin-right: 8px;
+	font-size: 1.7em;
 	font-style: italic;
 }
 
@@ -97,8 +112,17 @@ h1 {
 	color: var(--fg-c);
 
 	font-family: 'Caladea', serif;
+	font-weight: bold;
 	font-style: italic;
-	font-size: 64px;
+	font-size: 9em;
+}
+
+a {
+	color: var(--fg-c);
+
+	font-family: 'Caladea', serif;
+	font-size: 1.7em;
+	font-style: italic;
 }
 
 #Images {
@@ -121,12 +145,11 @@ h1 {
 	color: var(--s-fg-c);
 
 	display: flex;
-	flex-direction: column;
-	float: left;
-	max-width: 502px;
-	padding: 8px 8px 8px 8px;
-	padding-bottom: 25;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 8px;
 	margin: 4px;
+	max-width: 502px;
 	border-radius: 8px;
 	transition: box-shadow 0.25s;
 	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
@@ -145,8 +168,5 @@ h1 {
 .ImageContainer p {
 	color: var(--s-fg-c);
 
-	float: left;
 	text-align: center;
-	font-size: 24px;
-	line-height: 2.5;
 }
