@@ -24,6 +24,8 @@
 		imageContainer.appendChild(name);
 		imageSection.appendChild(imageContainer);
 	}
+
+	color();
 }
 
 //BUTTONS
