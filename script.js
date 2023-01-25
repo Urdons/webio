@@ -1,45 +1,29 @@
 
 { //SETUP
-	let group1 = ["FoliageOutABusWindow_20", "DewOnBlueCar_20", "WeezerRecord_14", "Piano_10", "BoatOnWater_06"]
-	let group2 = ["SchoolFood_20", "BusParkedOutBusWindow_20", "BarnShed_04", "CautionTape_04", "LeaveCubeMastered_04"]
+	let group = ["BusParkedOutBusWindow_20", "SchoolFood_20", "FoliageOutABusWindow_20", "DewOnBlueCar_20", "WeezerRecord_14", "Piano_10", "BoatOnWater_06", "LeafCubeMastered_04", "BarnShed_04", "CautionTape_04"]
 
 	const imageSection = document.getElementById("ImageGroupContainer");
 
-	const imageGroup1 = document.createElement("DIV");
-	imageGroup1.className = "ImageGroup";
+	for (let i of group) {
+		const imageContainer = document.createElement("DIV");
+		imageContainer.className = "ImageContainer";
 
-	for (let i of group1) {
-		const link = document.createElement("a");
-		link.href = "Images/" + i + ".jpg";
-		link.target="_blank";
-
-	const image = document.createElement("IMG");
-	image.src = "Images/" + i + ".jpg";
-	console.log("Images/" + i + ".jpg");
-
-	link.appendChild(image);
-	imageGroup1.appendChild(link);
-	}
-
-	imageSection.appendChild(imageGroup1);
-
-	const imageGroup2 = document.createElement("DIV");
-	imageGroup2.className = "ImageGroup";
-
-	for (let i of group2) {
 		const link = document.createElement("a");
 		link.href = "Images/" + i + ".jpg";
 		link.target="_blank";
 
 		const image = document.createElement("IMG");
 		image.src = "Images/" + i + ".jpg";
-		console.log("Images/" + i + ".jpg");
+
+		const name = document.createElement("p");
+		const text = document.createTextNode(i);
+		name.appendChild(text);
 
 		link.appendChild(image);
-	imageGroup2.appendChild(link)
+		imageContainer.appendChild(link);
+		imageContainer.appendChild(name);
+		imageSection.appendChild(imageContainer);
 	}
-
-	imageSection.appendChild(imageGroup2); 
 }
 
 //BUTTONS
@@ -69,14 +53,14 @@ function color () {
 		root.style.setProperty('--fg-c', 'black');
 		root.style.setProperty('--b-n-fg-c', 'black');
 		root.style.setProperty('--s-bg-c', 'black');
-		root.style.setProperty('--s-fg-c', 'white');
+		//root.style.setProperty('--s-fg-c', 'white');
 		root.style.setProperty('--b-h-bg-c', 'white');
 		root.style.setProperty('--b-h-fg-c', 'black');
 	} else {
 		root.style.setProperty('--fg-c', 'white');
 		root.style.setProperty('--b-n-fg-c', 'white');
 		root.style.setProperty('--s-bg-c', 'white');
-		root.style.setProperty('--s-fg-c', 'black');
+		//root.style.setProperty('--s-fg-c', 'black');
 		root.style.setProperty('--b-h-fg-c', 'white');
 		root.style.setProperty('--b-h-bg-c', 'black');
 	}
@@ -87,12 +71,12 @@ function theme () {
 
 	if (getComputedStyle(root).getPropertyValue('--s-bg-c') == 'white') {
 		root.style.setProperty('--s-bg-c', 'black');
-		root.style.setProperty('--s-fg-c', 'white');
+		//root.style.setProperty('--s-fg-c', 'white');
 		root.style.setProperty('--b-h-bg-c', 'white');
 		root.style.setProperty('--b-h-fg-c', 'black');
 	} else {
 		root.style.setProperty('--s-bg-c', 'white');
-		root.style.setProperty('--s-fg-c', 'black');
+		//root.style.setProperty('--s-fg-c', 'black');
 		root.style.setProperty('--b-h-fg-c', 'white');
 		root.style.setProperty('--b-h-bg-c', 'black');
 	}
