@@ -1,6 +1,6 @@
 
 { //SETUP
-	let group = ["BusParkedOutBusWindow_20", "SchoolFood_20", "FoliageOutABusWindow_20", "DewOnBlueCar_20", "WeezerRecord_14", "Piano_10", "BoatOnWater_06", "LeafCubeMastered_04", "BarnShed_04", "CautionTape_04"]
+	let group = ["ShoppingCenterLot_25", "RecordPlayer_24", "TheaterSeats_23", "BusParkedOutBusWindow_20", "SchoolFood_20", "FoliageOutABusWindow_20", "DewOnBlueCar_20", "WeezerRecord_14", "Piano_10", "BoatOnWater_06", "LeafCubeMastered_04", "BarnShed_04", "CautionTape_04"]
 
 	const imageSection = document.getElementById("ImageGroupContainer");
 
@@ -32,6 +32,8 @@
 function emptyPage () { window.location.href = "page.htm" }
 
 function youtube () { window.location.href = "https://www.youtube.com/channel/UCW4Ba6Mu-nRZII6kg2eEGzA" }
+
+function writing () { window.location.href = "writing.htm" }
 
 function color () { 
 	let root = document.querySelector(':root');

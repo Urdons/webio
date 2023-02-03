@@ -114,7 +114,7 @@ h1 {
 	font-family: 'Caladea', serif;
 	font-weight: bold;
 	font-style: italic;
-	font-size: 9em;
+	font-size: 7em;
 }
 
 a {
@@ -169,4 +169,5 @@ a {
 	color: var(--s-fg-c);
 
 	text-align: center;
+	line-height: 2;
 }
