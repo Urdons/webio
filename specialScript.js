@@ -1,20 +1,18 @@
 let dropdownMenuOpen = false;
 
 function dropdown () {
-    let dropdown = document.getElementById("dropdownButton");
-    let dropdownMenu = document.getElementById("dropdownMenu");
+    let dropdown = document.getElementById("dropdown");
+    let dropdownButton= document.getElementById("dropdownButton");
     console.log("hi");
     if (dropdownMenuOpen) {
         dropdown.style.left = '0em';
-        dropdown.firstElementChild.src = 'Images/icons/dropdown.svg';
-        dropdown.firstElementChild.alt = 'dropdown';
-        dropdownMenu.style.left = '-20em';
+        dropdownButton.firstElementChild.src = 'Images/icons/dropdown.svg';
+        dropdownButton.firstElementChild.alt = 'dropdown';
         dropdownMenuOpen = false;
     } else {
-        dropdown.style.left = '24em';
-        dropdown.firstElementChild.src = 'Images/icons/close.svg'
-        dropdown.firstElementChild.alt = 'close';
-        dropdownMenu.style.left = '0em';
+        dropdown.style.left = '20em';
+        dropdownButton.firstElementChild.src = 'Images/icons/close.svg'
+        dropdownButton.firstElementChild.alt = 'close';
         dropdownMenuOpen = true;
     }
 }

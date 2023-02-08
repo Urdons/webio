@@ -13,26 +13,38 @@ header {
     position: fixed;
 }
 
-#dropdownButton {
+/* DROPDOWN GROUP */
+#dropdown {
     position: fixed;
+    left: 0em;
+    height: 100%;
+    transition: left 0.2s;
+}
+
+/* DROPDOWN BUTTON */
+#dropdownButton {
+    position: absolute;
     left: 0em;
     width: 3em;
     height: 3em;
     padding: 0%;
-    transition: left 0.25s;
+    transition: box-shadow background-color 0.2s;
+
+    margin: 0.25em;
 }
 
 #dropdownButton img {
     width: 30%;
+    box-shadow: 0em 0em 2em #00000044;
 }
 
+/* DROPDOWN MENU AND BUTTONS */
 #dropdownMenu {
-    position: fixed;
+    position: absolute;
     width: 20em;
     height: 100%;
     left: -20em;
     top: 0em;
-    transition: left 0.25s;
 
     background-color: black;
     box-shadow: 0em 0em 2em #00000044;
@@ -42,12 +54,13 @@ header {
     width: 100%;
     border-radius: 0em;
     margin: 0em;
+    margin-bottom: 1px;
+    transition: background-color 0.05s;
 }
 
 button {
-    background-color: #222222;
+    background-color: #111111;
     color: white;
-    margin: 0.25em;
     padding: 1em;
     border-style: none;
     border-radius: 1em;
@@ -55,5 +68,5 @@ button {
 }
 
 button:hover {
-    background-color: #333333;
+    background-color: #222222;
 }
