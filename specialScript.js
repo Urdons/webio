@@ -1,41 +1,23 @@
+let dropdownMenuOpen = false;
 
-{ //SETUP
-	let group = ["ShoppingCenterLot_25", "RecordPlayer_24", "TheaterSeats_23", "BusParkedOutBusWindow_20", "SchoolFood_20", "FoliageOutABusWindow_20", "DewOnBlueCar_20", "WeezerRecord_14", "Piano_10", "BoatOnWater_06", "LeafCubeMastered_04", "BarnShed_04", "CautionTape_04"]
-
-	const imageSection = document.getElementById("ImageGroupContainer");
-
-	for (let i of group) {
-		const imageContainer = document.createElement("DIV");
-		imageContainer.className = "ImageContainer";
-
-		const link = document.createElement("a");
-		link.href = "Images/pictures/" + i + ".jpg";
-		link.target="_blank";
-
-		const image = document.createElement("IMG");
-		image.src = "Images/pictures/" + i + ".jpg";
-
-		const name = document.createElement("p");
-		const text = document.createTextNode(i);
-		name.appendChild(text);
-
-		link.appendChild(image);
-		imageContainer.appendChild(link);
-		imageContainer.appendChild(name);
-		imageSection.appendChild(imageContainer);
-	}
-
-	color();
+function dropdown () {
+    let dropdown = document.getElementById("dropdownButton");
+    let dropdownMenu = document.getElementById("dropdownMenu");
+    console.log("hi");
+    if (dropdownMenuOpen) {
+        dropdown.style.left = '0em';
+        dropdown.firstElementChild.src = 'Images/icons/dropdown.svg';
+        dropdown.firstElementChild.alt = 'dropdown';
+        dropdownMenu.style.left = '-20em';
+        dropdownMenuOpen = false;
+    } else {
+        dropdown.style.left = '24em';
+        dropdown.firstElementChild.src = 'Images/icons/close.svg'
+        dropdown.firstElementChild.alt = 'close';
+        dropdownMenu.style.left = '0em';
+        dropdownMenuOpen = true;
+    }
 }
-
-//BUTTONS
-function emptyPage () { window.location.href = "page.htm" }
-
-function youtube () { window.location.href = "https://www.youtube.com/channel/UCW4Ba6Mu-nRZII6kg2eEGzA" }
-
-function writing () { window.location.href = "writing.htm" }
-
-function special () { window.location.href = "specialpage.htm" }
 
 function color () { 
 	let root = document.querySelector(':root');
