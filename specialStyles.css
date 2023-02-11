@@ -2,10 +2,18 @@
 	padding: 0;
 	margin: 0;
     font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+div {
+    user-select: none;
 }
 
 body {
-    padding-top: 4em
+    padding-top: 3.5em;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    padding-bottom: 0.25em;
 }
 
 header {
@@ -18,11 +26,40 @@ button {
     padding: 1em;
     border-style: none;
     border-radius: 1em;
-    transition: box-shadow 1s;
+    transition: all 0.2s;
 }
 
 button:hover {
     background-color: #333;
+}
+
+/*//////////////////////////////////*/
+/*  STYLING RELATED TO THE HEADER   */
+/*//////////////////////////////////*/
+#header {
+    position: fixed;
+    background-color: #222;
+    border-radius: 1em;
+    overflow-x: hidden;
+    margin: 0.25em;
+
+    right: 0em;
+    top: 0em;
+    width: auto;
+    height: 3.2em;
+}
+
+#header button {
+    background-color: transparent;
+    color: white;
+
+    height: auto;
+    width: auto;
+}
+
+#header button:hover {
+    background-color: #333;
+    color: white;
 }
 
 /*//////////////////////////////////*/
@@ -34,46 +71,46 @@ button:hover {
     position: fixed;
     padding: 0%;
     z-index: 100;
-    transition: box-shadow background-color 0.2s;
-    transition: left 0.2s;
+    box-shadow: 0em 0em 2em #00000044;
+    transition: all 0.2s;
 
     margin: 0.25em;
 
     left: 0px;
     top: 0em;
-    width: 3.5em;
-    height: 3.5em;
+    width: 3.2em;
+    height: 3.2em;
 }
 
 #dropdownButton img {
     width: 30%;
-    box-shadow: 0em 0em 2em #00000044;
 }
 
 #dropdownButton.active {
-    left: 30em;
+    left: 25em;
     top: 0em;
-    width: 3.5em;
-    height: 3.5em;
+    width: 3.2em;
+    height: 3.2em;
 }
 
 #dropdownButton.m {
     left: 0em;
     top: 0em;
-    width: 3.5em;
-    height: 3.5em;
+    width: 3.2em;
+    height: 3.2em;
 }
 
 #dropdownButton.m.active {
     left: calc(50vw - 1.75em);
     top: 0em;
-    width: 3.5em;
-    height: 3.5em;
+    width: 3.2em;
+    height: 3.2em;
 }
 
 /* DROPDOWN MENU */
 #dropdownMenu {
     position: fixed;
+    z-index: 90;
     overflow-y: scroll;
 
     background-color: #111;
@@ -121,7 +158,7 @@ button:hover {
 /* DROPDOWN TITLES */
 #dropdownMenu p {
     width: 100%;
-    color: white;
+    color: #ccc;
     text-align: center;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
