@@ -1,0 +1,29 @@
+{
+  "name": "webio",
+  "version": "1.0.0",
+  "description": "A personal Website/Bio thing",
+  "main": "app.js",
+  "scripts": {
+    "test": "run",
+    "watch-tailwind": "npx tailwindcss -i ./public/styles/tailwind.config.css -o ./public/styles/tailwind.css --watch",
+    "watch-typescript": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Urdons/webio.git"
+  },
+  "keywords": [
+    "webio"
+  ],
+  "author": "Ave Wiernicki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Urdons/webio/issues"
+  },
+  "homepage": "https://github.com/Urdons/webio#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.4"
+  }
+}
