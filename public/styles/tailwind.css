@@ -554,8 +554,24 @@ video {
   --tw-contain-style:  ;
 }
 
+.static {
+  position: static;
+}
+
 .fixed {
   position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.sticky {
+  position: sticky;
 }
 
 .left-0 {
@@ -568,6 +584,14 @@ video {
 
 .right-0 {
   right: 0px;
+}
+
+.left-2 {
+  left: 0.5rem;
+}
+
+.top-2 {
+  top: 0.5rem;
 }
 
 .z-50 {
@@ -610,6 +634,10 @@ video {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
@@ -632,6 +660,11 @@ video {
   height: 42px;
 }
 
+.max-h-fit {
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+
 .min-h-0 {
   min-height: 0px;
 }
@@ -647,6 +680,19 @@ video {
 
 .min-w-0 {
   min-width: 0px;
+}
+
+.max-w-fit {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.flex-shrink {
+  flex-shrink: 1;
+}
+
+.shrink {
+  flex-shrink: 1;
 }
 
 .scale-100 {
@@ -729,6 +775,10 @@ video {
   border-radius: 0.375rem;
 }
 
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
 .border-\[1px\] {
   border-width: 1px;
 }
@@ -765,9 +815,22 @@ video {
   background-color: rgb(9 9 11 / 0.75);
 }
 
+.bg-zinc-950\/25 {
+  background-color: rgb(9 9 11 / 0.25);
+}
+
+.bg-zinc-950\/50 {
+  background-color: rgb(9 9 11 / 0.5);
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .p-2 {
@@ -851,6 +914,10 @@ video {
 
 .bg-blend-lighten {
   background-blend-mode: lighten;
+}
+
+.outline-1 {
+  outline-width: 1px;
 }
 
 .brightness-75 {
