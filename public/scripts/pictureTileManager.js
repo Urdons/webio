@@ -3,6 +3,10 @@ const INTENSITY = 10;
 let mousex = 0;
 let mousey = 0;
 let pictures = [
+    "_MG_4879",
+    "_MG_4972",
+    "_MG_4974",
+    "_MG_4975",
     "000773250004",
     "000773250006",
     "000773250017",
@@ -13,7 +17,7 @@ let pictures = [
     "000773250035",
     "000773250036"
 ];
-for (var i = 0; i < pictures.length; i++) {
+for (var i = pictures.length - 1; i >= 0; i--) {
     newPictureTile("pictures/" + pictures[i] + ".jpg");
 }
 function newPictureTile(imgsrc) {
