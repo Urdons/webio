@@ -7,23 +7,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <title> Home </title>
 </head>
-<body class="bg-zinc-900">
-    <div id="header" class="z-50 sticky select-none transition-all left-0 top-0 w-full p-2 bg-zinc-950 border-b-[1px] border-zinc-800">
-        <a src="index.html" class="material-symbols-rounded left-0 inline-block select-none transition-all p-2 scale-100 hover:scale-105 bg-zinc-950 border-[1px] border-zinc-800 hover:border-zinc-50 rounded-md text-zinc-50">home</a>
+<body class="bg-void-light dark:bg-void-dark">
+    <div id="header" class="z-50 sticky select-none transition-all left-0 top-0 w-full p-2 bg-background-light dark:bg-background-dark border-b-[1px] border-outline-light dark:border-outline-dark">
+        <a src="index.html" class="material-symbols-rounded left-0 inline-block select-none transition-all p-2 scale-100 hover:scale-105 bg-background-light dark:bg-background-dark border-[1px] border-outline-light dark:border-outline-dark hover:border-text-hard-light dark:hover:border-text-hard-dark rounded-md text-text-hard-light dark:text-text-hard-dark">home</a>
     </div>
-    <div id="body" class="relative bg-zinc-950 p-4 w-full">
-        <div id="bigPictureContainer", class="fixed hidden overflow-hidden justify-center align-middle left-0 top-0 w-full h-full backdrop-blur-sm bg-zinc-950/50 z-50 p-2">
-            <span class="close absolute material-symbols-rounded inline-block left-2 top-2 select-none transition-all p-2 scale-100 hover:scale-105 bg-zinc-950 border-[1px] border-zinc-800 hover:border-zinc-50 rounded-md text-zinc-50">close</span>
-            <img id="bigPictureImage" class="min-w-0 min-h-0 object-contain" src="" alt="">
+    <div id="body" class="relative bg-background-light dark:bg-background-dark p-4 w-full">
+        <div id="bigPictureContainer", class="fixed hidden overflow-hidden justify-center align-middle left-0 top-0 w-full h-full backdrop-blur-sm bg-background-light/50 dark:bg-background-dark/50 z-50 p-2">
+            <span class="close absolute material-symbols-rounded inline-block left-2 top-2 select-none transition-all p-2 scale-100 hover:scale-105 bg-background-light dark:bg-background-dark border-[1px] border-outline-light dark:border-outline-dark hover:border-text-hard-light dark:hover:border-text-hard-dark rounded-md text-text-hard-light dark:text-text-hard-dark">close</span>
+            <img id="bigPictureImage" class="min-w-0 min-h-0 object-contain drop-shadow-2xl" src="" alt="">
         </div>
         <div id="pictureTileGridContainer" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 w-fit">
 
         </div>
     </div>
     <div id="footer" class="p-2">
-        <p class="text-zinc-700">you found me</p>
+        <p class="text-text-soft-light dark:text-text-soft-dark">you found me</p>
     </div>
 </body>
+<script src="scripts/userIsOnMobile.js"></script>
 <script src="scripts/bigPicture.js"></script>
 <script src="scripts/pictureTileManager.js"></script>
 </html>
