@@ -50,7 +50,7 @@ function mouseOff(element) {
     element.classList.remove("border-text-hard-light", "dark:border-text-hard-dark");
     element.classList.add("border-outline-light", "dark:border-outline-dark");
     element.classList.add("transition-all");
-    element.style.filter = "brightness(75%)";
+    element.style.filter = "brightness(100%) opacity(75%)";
     element.style.transform = "scale(100%)";
 }
 function skewEffect(event, element) {

@@ -60,7 +60,7 @@ function mouseOff(element : HTMLElement) {
     element.classList.add("border-outline-light", "dark:border-outline-dark")
     element.classList.add("transition-all")
     
-    element.style.filter = "brightness(75%)"
+    element.style.filter = "brightness(100%) opacity(75%)"
     element.style.transform = "scale(100%)"
 }
 

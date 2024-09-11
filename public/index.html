@@ -12,22 +12,40 @@
     <div id="header" class="z-50 flex sticky select-none transition-all left-0 top-0 w-full p-2 bg-background-light dark:bg-background-dark border-b-[1px] border-outline-light dark:border-outline-dark">
         <a src="index.html" class="material-symbols-rounded left-0 inline-block select-none transition-all p-2 scale-100 hover:scale-105 bg-background-light dark:bg-background-dark border-[1px] border-outline-light dark:border-outline-dark hover:border-text-hard-light dark:hover:border-text-hard-dark rounded-md text-text-hard-light dark:text-text-hard-dark">home</a>
         <p class="font-mono font-bold w-full text-center py-2 text-text-hard-light dark:text-text-hard-dark"> Ave Wiernicki </p>
-        <img src="pictures/icons/logo.svg" alt="" class="object-cover w-[2.8rem]">
+        <img src="pictures/icons/logo.svg" alt="" class="object-cover w-[2.8em]">
     </div>
     <div id="body" class="relative bg-background-light dark:bg-background-dark p-4 w-full">
         <div id="bigPictureContainer", class="fixed hidden overflow-hidden justify-center align-middle left-0 top-0 w-full h-full backdrop-blur-sm bg-background-light/50 dark:bg-background-dark/50 z-50 p-2">
-            <span class="close absolute material-symbols-rounded inline-block left-2 top-2 select-none transition-all p-2 scale-100 hover:scale-105 bg-background-light dark:bg-background-dark border-[1px] border-outline-light dark:border-outline-dark hover:border-text-hard-light dark:hover:border-text-hard-dark rounded-md text-text-hard-light dark:text-text-hard-dark">close</span>
-            <img id="bigPictureImage" class="min-w-0 min-h-0 object-contain drop-shadow-2xl" src="" alt="">
+            <span class="close z-10 absolute material-symbols-rounded inline-block left-2 top-2 select-none transition-all p-2 scale-100 hover:scale-105 bg-background-light dark:bg-background-dark border-[1px] border-outline-light dark:border-outline-dark hover:border-text-hard-light dark:hover:border-text-hard-dark rounded-md text-text-hard-light dark:text-text-hard-dark">close</span>
+            <img id="bigPictureImage" class="transition-all min-w-0 min-h-0 object-contain drop-shadow-2xl" src="" alt="">
         </div>
         <div id="pictureTileGridContainer" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 w-fit">
 
         </div>
     </div>
-    <div id="footer" class="p-2">
-        <p class="text-text-soft-light dark:text-text-soft-dark">you found me</p>
+    <div id="footer" class="p-2 px-4">
+        <p class="select-none font-mono text-text-soft-light dark:text-text-soft-dark">other links:
+            <a href="https://www.youtube.com/@urdons8701" class="select-none transition-all font-mono p-1 px-2 hover:bg-text-soft-light dark:hover:bg-text-soft-dark text-text-soft-light dark:text-text-soft-dark hover:text-void-light hover:dark:text-void-dark rounded-md">youtube</a>
+            <a href="https://www.instagram.com/ave_wiernicki/" class="select-none transition-all font-mono p-1 px-2 hover:bg-text-soft-light dark:hover:bg-text-soft-dark text-text-soft-light dark:text-text-soft-dark hover:text-void-light hover:dark:text-void-dark rounded-md">instagram</a>
+            <a href="https://github.com/Urdons" class="select-none transition-all font-mono p-1 px-2 hover:bg-text-soft-light dark:hover:bg-text-soft-dark text-text-soft-light dark:text-text-soft-dark hover:text-void-light hover:dark:text-void-dark rounded-md">github</a>
+            <a href="https://codefetch.onrender.com/user/Urdons" class="select-none transition-all font-mono p-1 px-2 hover:bg-text-soft-light dark:hover:bg-text-soft-dark text-text-soft-light dark:text-text-soft-dark hover:text-void-light hover:dark:text-void-dark rounded-md">fetchcv</a>
+            <span class="float-right select-none font-mono text-text-soft-light dark:text-text-soft-dark">website by Ave Wiernicki</span>
+        </p>
+        <br>
+        <hr class="my-2 text-text-soft-light/50 dark:text-text-soft-dark/50">
+        <p class="select-none font-mono text-text-soft-light dark:text-text-soft-dark">
+            what else do you put in a footer? i don't know lol... go to the link below to report issues or make suggestions for this website
+        </p>
+        <br>
+        <p class="select-none opacity-50 font-mono italic text-text-soft-light dark:text-text-soft-dark">This open-source website is hosted on
+            <a href="https://github.com/Urdons/webio" class="select-none transition-all font-mono p-1 px-2 hover:bg-text-soft-light dark:hover:bg-text-soft-dark text-text-soft-light dark:text-text-soft-dark hover:text-void-light hover:dark:text-void-dark rounded-md">github</a>
+        </p>
+        <hr class="my-2 text-text-soft-light/50 dark:text-text-soft-dark/50">
+        <hr class="my-2 text-text-soft-light/50 dark:text-text-soft-dark/50">
+        <hr class="my-2 text-text-soft-light/50 dark:text-text-soft-dark/50">
+        <hr class="my-2 text-text-soft-light/50 dark:text-text-soft-dark/50">
     </div>
 </body>
-<script src="scripts/userIsOnMobile.js"></script>
 <script src="scripts/bigPicture.js"></script>
 <script src="scripts/pictureTileManager.js"></script>
 </html>
