@@ -16,7 +16,8 @@ let pictures = [
     "000773250029",
     "000773250035",
     "000773250036",
-    "000773260025"
+    "000773260025",
+    "000773260022"
 ];
 for (var i = pictures.length - 1; i >= 0; i--) {
     newPictureTile("pictures/" + pictures[i] + ".jpg");
